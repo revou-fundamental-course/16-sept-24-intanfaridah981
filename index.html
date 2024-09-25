@@ -28,14 +28,16 @@
         <!-- Home -->
         <section id="section-home">
             <header>
-                <h1>Hi People, Welcome to My Website</h1>
+                <h1 class="inline">Hi <h1 class="inline" id="user-name">User</h1>, Welcome to My Website</h1>
             </header>
 
             <article>
                 <p>Lorem Ipsum Dolor Sit Amet Adipiscing</p>
                 
                 <!-- Photo Banner-->
-                <div class="photo-banner" ></div>
+                <div class="photo-banner photo-1" ></div>
+                <div class="photo-banner photo-2" ></div>
+                <div class="photo-banner photo-3" ></div>
             </article>
         </section>
 
@@ -84,43 +86,19 @@
 
            <section>
             <!-- Form -->
-            <fom>
-                <fieldset>
-                    <p>
-                        <label for="nama">Nama:</label>
-                        <input type="text" name="nama">
-                    </p>
+            <fom onsubmit="return false;">
+                <div>
+                    <label for="input-name">Nama:</label>
+                    <input type="text" id="input-name"/>
+                </div>
 
-                    <p>
-                        <label for="tanggal lahir">Tanggal Lahir:</label>
-                        <input type="date" name="tanggal lahir">
-            
-                    </p>
-
-                    <p>
-                        <div>Jenis Kelamin:</div>
-                        <input type="radio" id="Laki-Laki" name="fav_language" value="Laki-Laki">
-                        <label for="html">Laki-Laki</label><br>
-                        <input type="radio" id="Perempuan" name="fav_language" value="Perempuan">
-                        <label for="css">Perempuan</label><br>
-                        
-                    </p>
-
-                    <p>
-                        <p>Pesan:<p>
-                            <form action="Pesan">
-                            <textarea name="message" rows="10" cols="30">Pesan</textarea>
-                            <br><br>
-                    </p>
-
-                    <p>
-                        <input type="submit" value="Submit">
-                    </p>
-                </fieldset>
+                <button type="submit" onclick="validateForm()">Submit</button>
             </fom>
 
             <!-- Result Form-->
-            <div></div>
+            <div>
+                <p>Result Form: <span id="result-form"></span></p>
+            </div>
            </section>
 
         </section>
@@ -130,6 +108,9 @@
     <footer>
         <p>Made by Intan@2024</p>
     </footer>
+
+
+    <script src="js\script.js"></script>
 </body>
 
 </html>
