@@ -16,22 +16,27 @@ function validateForm() {
         document.getElementById("result-form").innerHTML = inputName;
         alert("Sukses Submit Form");
     }
-    
 }
 
+let indexSlide = 1;
 showSlide();
 
-function showSlide() {
+function nextSlide(n){
+    showSlide(indexSlide += n);
+}
+
+function showSlide(n) {
     let listimage = document.getElementsByClassName("photo-banner");
 
+    //Hide All Image
     let i = 0;
     while (i <listimage.length) {
-        listimage[1].style.display = "none";
-        indexedDB
+        listImage[i].style.display="none";
+        i++;
     }
 
-    letImage[0].style.display = "none";
-    letImage[1].style.display = "none";
-    letImage[2].style.display = "none";
-    console.log(listimage);
+    letImage[indexSlide - 1].style.display = "block";
+    console.log(listImage);
 }
+
+setInterval(() => nextSlide (1), 2000)
