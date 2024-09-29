@@ -18,6 +18,10 @@ function validateForm() {
     }
 }
 
+
+console.log(listImage);
+setInterval(() => nextSlide (1), 2000)
+letImage[indexSlide - 1].style.display = "block";
 let indexSlide = 1;
 showSlide();
 
@@ -39,4 +43,3 @@ function showSlide(n) {
     console.log(listImage);
 }
 
-setInterval(() => nextSlide (1), 2000)

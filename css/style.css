@@ -1,4 +1,7 @@
 
+.index.html{
+    background-color: aquamarine;
+}
 .main-header {
     display: flex;
     justify-content: space-between;
@@ -17,7 +20,7 @@
 }
 
 nav>a {
-    border: 1px solid;
+    border: 1PX solid;
     padding: 8px;
     color: black;
     text-decoration: none;
@@ -39,16 +42,16 @@ nav>a {
 }
 
 .photo-1 {
-    background-image: url(../assets/profile\ 1.jpg);
+    background-image: url(../assets/banner.jpg);
     
 }
 
 .photo-2 {
-    background-image: url(../assets/profile\ 2.jpg);
+    background-image: url(../assets/banner.jpg);
 }
 
 .photo-3 {
-    background-image: url(../assets/profile\ 3.jpg);
+    background-image: url(../assets/banner.jpg);
 }
 
 .profile-icon-1{
